@@ -20,7 +20,7 @@
       ORDER BY update_date DESC
   </select>
 
-  <insert id="insertSwToolsInfo"> 
+  <insert id="insertSwToolsInfo">
     INSERT INTO react.react_swtool
     (
         swt_code

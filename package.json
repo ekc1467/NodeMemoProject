@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
     "concurrently": "^5.0.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -17,6 +18,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "mybatis-mapper": "^0.6.5",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "npm": "^8.7.0",
+    "react-bootstrap": "^1.6.1"
   }
 }

@@ -1,0 +1,55 @@
+
+검색 단어
+node js 필수 플러그인
+
+
+리액트 플러그인
+https://react.vlpt.us/basic/27-useful-tools.html
+
+
+윈도우 에러
+https://songjang.tistory.com/31
+
+node는 재설치하면 npm과 node가 자동으로 업데이트가 되며 nodemon은 저버젼 node에 따라
+에러가 걸리니 node 업데이트 후 다시 설치하면 nodemon도 알아서 업데이트 된다
+
+파일 전체를 압축하여 만들어도 포함되지 않는 글로벌 패키지가 json에 입력되어 있을 수 있으니
+npm install을 json이 있는 폴더마다 해주어야 한다.
+
+https://www.fmkorea.com/best/4532289825
+
+
+https://www.fmkorea.com/best/4531211830
+
+부트스트랩 리액트 적용
+https://joonpyo-hong.tistory.com/entry/React-%EB%A6%AC%EC%95%A1%ED%8A%B8React%EC%97%90-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9BootStrap-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0
+
+리액트 부트스트랩 1점 버전대와 그냥 부트스트랩 4점대 마이그레이션
+https://gallery-k.tistory.com/250
+
+에러가 안뜨더라도 부트 스트랩 태그들 import 해주기
+
+react boot strap과 그냥 boot strap 헷갈리게 import x
+
+
+
+head는 왜인지 react에서 안나옴;
+그 이유: https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html
+리액트나 뷰로 개발할 때 보통은 마운트 된 <body> 태그 안의 특정 요소에서만 작업하기 때문에 이것에 대해 신경쓸 일이 별로 없었다. 
+
+
+뷰들 만들었고 버튼을 클릭했을 때 생성하는 거 제작하기전에 DB부터
+dbConnect_Module은 select 부분에서 crud 추가하는 부분만 바뀌면 될 듯 하다.
+위의 req.body를 통해 받은 param들은 넘겨주기 위한 query를 위해 만든 것.
+
+흐름 설계
+1. 프론트 엔드에서 type을 루트가 적힌 req에 붙여서 보낸다.
+2. ServerJS에서 app.use를 통해 해당 요구 페이지(route)로 이동
+3. 해당 페이지에서 타입에 따른 query를 만들 인자들을 body에 붙여 dbmodule로 넘김
+4. module은 mapper.xml과 연동하여 db에서 결과를 받아 프론트 엔드로 넘겨준다.
+
+
+
+함수형으로 바꿔보기
+https://velog.io/@solmii/React%EC%9D%98-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-feat.Hooks
+https://codechasseur.tistory.com/99
