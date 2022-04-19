@@ -20,12 +20,13 @@ class MemoList extends Component {
 
         <body>
             <Jumbotron>
-                <h1>모두의 메모장</h1>
+                <h1>노트</h1>
                 <p>
-                여러분들의 일주일 간의 메모를 볼 수 있어요! 매주 월요일 00:00시 초기화가 됩니다!
+                {/* 여러분들의 일주일 간의 메모를 볼 수 있어요! 매주 월요일 00:00시 초기화가 됩니다! */}
+                일주일 간의 메모: 매주 월요일 00:00시 초기화
                 </p>
                 <p>
-                    <Button variant="primary">메모하기</Button>
+                    <Button variant="primary">Do it</Button>
                 </p>
             </Jumbotron>
 

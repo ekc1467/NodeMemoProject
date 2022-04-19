@@ -31,6 +31,12 @@ https://gallery-k.tistory.com/250
 
 react boot strap과 그냥 boot strap 헷갈리게 import x
 
+this.state = {a : undefined, b: undefined}; 를 해야 오
+
+
+ var port = process.env.PORT || '5000';
+ app.listen(port, ()=>{ console.log('listen');}); 
+
 
 
 head는 왜인지 react에서 안나옴;
@@ -48,8 +54,14 @@ dbConnect_Module은 select 부분에서 crud 추가하는 부분만 바뀌면 �
 3. 해당 페이지에서 타입에 따른 query를 만들 인자들을 body에 붙여 dbmodule로 넘김
 4. module은 mapper.xml과 연동하여 db에서 결과를 받아 프론트 엔드로 넘겨준다.
 
-
+*b와 a의 연산이라 이렇게 a가 처리된 후에 이 연산이 필요한 경우 promise를 이용한 즉시 갱신이 가능하게 한다.(368p의 11line~ 값의 갱신이 확인되어야 하는 부분.
+(axios는 return값이 promise이기 때문에 then이 가능.
 
 함수형으로 바꿔보기
 https://velog.io/@solmii/React%EC%9D%98-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-feat.Hooks
 https://codechasseur.tistory.com/99
+
+nodemon server를 이용해야한다.
+
+본문 소스 코드
+http://www.ipg.kr/new/sub07_01/sub07_01.asp?rec_no=1194&sub_no=0&dsp=2&lcnt=752&flg=detail&pdsid=1
