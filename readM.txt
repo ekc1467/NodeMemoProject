@@ -65,3 +65,10 @@ nodemon server를 이용해야한다.
 
 본문 소스 코드
 http://www.ipg.kr/new/sub07_01/sub07_01.asp?rec_no=1194&sub_no=0&dsp=2&lcnt=752&flg=detail&pdsid=1
+
+
+1. DB
+2. mapper
+3. module
+4. front
+5. (이벤트)
