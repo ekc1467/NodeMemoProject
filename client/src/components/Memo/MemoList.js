@@ -6,10 +6,36 @@ import Swal from 'sweetalert2'
 import "../../css/styles.css";
 import "../../css/stylea.css";
 import "../../js/scripts.js";
+import { response } from 'express';
 class MemoList extends Component{
+    constructor(props){
+        this.state = {
+            responseMemoList: '',
+            append_MemolList: '',
+        }
+    }
+
+    componentDidMount(){
+        this.callSwToolListApi();
+    }
+
+    callSwToolListApi = async () => {
+        axios.post('/memoList?type=list', {
+        })
+        .then( response => {
+            try {
+                this.setState({ responseSwtoolList: response });
+                this.setState({ append_SwtoolList: this.SwToolListAppend() });
+            } catch (error) {
+                alert('작업중 오류가 발생하였습니다.');
+            }
+        })
+        .catch( error => {alert('작업중 오류가 발생하였습니다.');return false;} );
+    }
 
 
 
+    
     render(){
         return(
                 <div>
