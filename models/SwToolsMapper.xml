@@ -3,7 +3,8 @@
 <mapper namespace="SwToolsMapper">  
   <select id="selectSwToolsList">
       SELECT 
-        name
+        code
+        , name
         , password
         , title
         , content
@@ -11,9 +12,9 @@
         , reg_date
         , reg_user
         , update_date
-      FROM react.react_swtool
+      FROM FROM react.note
       <if test="is_Reg_user != null && is_Reg_user != ''">
-        WHERE reg_user = #{is_Email}
+        WHERE code = #{is_Code}
       </if>
       ORDER BY update_date DESC
   </select>
@@ -21,7 +22,8 @@
   <insert id="insertSwToolsInfo">
     INSERT INTO react.note
     (
-        name
+        code
+        , name
         , password
         , title
         , content
@@ -50,7 +52,8 @@
   <update id="updateSwToolsInfo"> 
     UPDATE react.note
     SET
-        name = #{is_Name}
+        code
+        , name = #{is_Name}
         , password = #{is_Password}  
         , title = #{is_Title}
         , content = #{is_Content}
@@ -58,11 +61,11 @@
           , imagepath = #{is_MainImg}
         </if>
         , update_date = DATE_FORMAT(now(), '%Y%m%d%H%i%s')
-    WHERE reg_user = #{is_Email}
+    WHERE code = #{is_Code}
   </update>
 
   <delete id="deleteSwToolsInfo">
     DELETE FROM react.note
-    WHERE reg_user = #{is_Email}
+    WHERE code = #{is_Code}
   </delete>
 </mapper>
