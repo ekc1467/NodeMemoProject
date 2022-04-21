@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 import "../../css/styles.css";
 import "../../css/stylea.css";
 import "../../js/scripts.js";
-import { response } from 'express';
+
 class MemoList extends Component{
     constructor(props){
         this.state = {
